@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+.maincard{
+    background-color: rgb(221, 249, 250);
+    background-size: cover;
+    height:100%;
+    padding: 10px;
+}
+.homecard{
+    padding-top:100px;
+    height: 100%;
+    background-size: cover;
+}
+.navbarlogo{
+    width: 40px;
+    height: 60px;
+}
+.navbartext{
+    font-family: 'roboto';
+}
+.photo{
+    height: 400px;
+    width: 500px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.slidetext{
+    font-size: 32px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.slidetext span{
+    position: relative;
+}
+
+.slidetext span::before{
+    content: "Web Develper";
+    color:#f0701b;
+    animation: words 20s infinite;
+}
+
+.slidetext span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 12px);
+    height: 102%;
+    background-color:rgb(221, 249, 250);
+    
+    border-left: 4px solid #ff7f50;
+    right: -8px;
+    animation: cursor .8s infinite, typing 25s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,25%{
+        content: "Web Developer";
+    }
+    26%,50%{
+        content: "Web Designer";
+    }
+    51%,75%{
+        content: "Programmer";
+    }
+    76%,100%{
+        content: "Editor";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+.hiremebtn{
+    border-radius: 10px;
+    background-color: #f0701b;
+    color: aliceblue;
+    border-width: 1px;
+    width: 100px;
+    height:30px;
+}
+.skillcard{
+    position: relative;
+    width: 100%;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.skillcard .skill-box{
+    width: 100%;
+    margin:10px 0;
+}
+.skill-box .skill-tittle{
+    display: block;
+}
+.skill-box .skill-bar{
+    background-color: rgb(242, 243, 245);
+    height: 9px;
+    width: 100%;
+    border-radius: 4px;
+}
+.skill-bar .skill-per{
+    position: relative;
+    display: block;
+    background-color: #1a09b1;
+    height: 100%;
+    width: 90%;
+    border-radius: 4px;
+}
+.skill-per.html{
+    width: 80% ;
+}
+.skill-per.java-script{
+    width: 60%;
+}
+.skill-per.sql{
+    width: 70%;
+}
+.percent{
+    position: absolute;
+    right: -14px;
+    top: -27px;
+}
+ul{
+    border-left: 2px solid #1a09b1;
+    position: relative;
+    display: block;
+    padding-left: 2.6%;
+    margin-left: 5%;
+    margin-top: 15px;
+}
+.webdeveloper-card{
+    background-color: azure;
+    width: 500px;
+    padding: 10px;
+    border-radius: 25px;
+    margin-right:  10px;
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+}
+.developer-icon{
+
+    font-size: 60px;
+    color: #f0701b
+}
+.webdeveloper-card-heading{
+    font-size: 26px;
+}
+.portfoliocard{
+    background-size: cover;
+    height: 100vh;
+    padding-top: 70px;
+}
+.projectcard{
+    border:#f0701b solid 5px;
+    background-color: rgb(217, 250, 156);
+    border-radius: 5px;
+    padding:0;
+    margin: 10px;
+    color: black;
+}
+.movieproject{
+    height: 28vh;
+    width: 100%;
+    border: #f0701b solid 5px;
+    border-top: none;
+    margin-bottom: 10px;
+}
+.contactcard{
+    text-align: center;
+    height: 100%;
+    padding-top: 70px;
+}
+.social-media-icons{
+    font-size: 45px;
+    margin: 10px;
+}
