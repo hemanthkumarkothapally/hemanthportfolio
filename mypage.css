@@ -193,13 +193,13 @@ ul{
 }
 .portfoliocard{
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     padding-top: 70px;
 }
 .projectcard{
     border:#f0701b solid 5px;
     background-color: rgb(217, 250, 156);
-    height: 38vh;
+    height: 100%;
     border-radius: 5px;
     padding:0;
     margin: 10px;
